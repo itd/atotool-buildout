@@ -1,0 +1,18 @@
+http://coding.smashingmagazine.com/2013/03/12/customizing-bootstrap/
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Noto+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+
+font-family: 'Source Code Pro', sans-serif;
+
+body {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+
+font-family: 'Source Code Pro', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+
+
+
