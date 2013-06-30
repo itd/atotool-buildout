@@ -24,7 +24,7 @@ yum -y install git
 # need to send email
 yum -y install postfix mailx
 
-# Build stuff
+# Build stuff - rpm-centric. Sorry. That's life at the day job.
 yum -y install gcc gcc-c++ glibc-devel make patch zlib zlib-devel bzip2-devel libjpeg libjpeg-devel libpng libpng-devel libtiff libtiff-devel giflib-devel giflib
 # python stuff
 yum -y install python-devel python-imaging python-ldap python-setuptools readline readline-devel libxml2-devel libxslt-devel gcc gcc-c++ glibc-devel zlib zlib-devel bzip2-devel libjpeg libjpeg-devel libpng libpng-devel libtiff libtiff-devel giflib-devel giflib sqlite-devel
