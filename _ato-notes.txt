@@ -42,3 +42,4 @@ from zope.schema.vocabulary import SimpleVocabulary
 from Products.CMFCore.utils import getToolByName
 from zope.schema.interfaces import IVocabularyFactory
 
+http://keeshink.blogspot.com/2011/05/creating-plone-content-when-installing.html
