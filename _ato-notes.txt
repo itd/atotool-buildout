@@ -43,3 +43,65 @@ from Products.CMFCore.utils import getToolByName
 from zope.schema.interfaces import IVocabularyFactory
 
 http://keeshink.blogspot.com/2011/05/creating-plone-content-when-installing.html
+
+
+
+
+2013-08-11 00:25:14 INFO ato.tool.setuphandlers -- Compliance control item Timely Maintenance  created
+2013-08-11 00:25:14 ERROR Zope.SiteErrorLog 1376202314.620.270713003048 http://localhost:20161/ato/portal_setup/manage_importSelectedSteps
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module ZPublisher.Publish, line 46, in call_object
+  Module Products.GenericSetup.tool, line 511, in manage_importSelectedSteps
+  Module Products.GenericSetup.tool, line 324, in runImportStepFromProfile
+  Module Products.GenericSetup.tool, line 1015, in _doRunImportStep
+   - __traceback_info__: ato_tool_builder
+  Module ato.tool.setuphandlers, line 198, in importATOContent
+  Module ato.tool.setuphandlers, line 113, in createComplianceControls
+  Module plone.folder.ordered, line 221, in __getitem__
+KeyError: ''
+
+
+
+2013-08-11 00:28:15 ERROR Zope.SiteErrorLog 1376202495.930.179834492445 http://localhost:20161/ato/ato/cm/cm-02-2/view
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module ZPublisher.Publish, line 46, in call_object
+  Module plone.autoform.view, line 46, in __call__
+  Module plone.autoform.view, line 56, in _update
+  Module z3c.form.form, line 134, in updateWidgets
+  Module z3c.form.field, line 277, in update
+  Module plone.app.textfield.widget, line 31, in update
+  Module z3c.form.browser.textarea, line 37, in update
+  Module z3c.form.browser.widget, line 171, in update
+  Module z3c.form.widget, line 131, in update
+  Module plone.app.textfield.widget, line 86, in toWidgetValue
+ValueError: Cannot convert 'The organization employs automated mechanisms to maintain an up-to-date, complete, accurate, and readily available baseline configuration.' to an IRichTextValue
+2013-08-11 00:33:01 INFO ato.tool.setuphandlers BEGIN: Import 800-53 ATO Builder content.
+2013-08-11 00:33:01 INFO ato.tool.setuphandlers START: create Compliance Tracker
+2013-08-11 00:33:01 INFO ato.tool.setuphandlers >> DONE: Compliance Tracker folder was created
+2013-08-11 00:33:01 INFO ato.tool.setuphandlers >> START: create Compliance Family Folders
+2013-08-11 00:33:01 INFO ato.tool.setuphandlers >> DONE: Compliance Family folders created.
+> /web/atotool/atotool-buildout/src/ato.tool/ato/tool/setuphandlers.py(198)importATOContent()
+-> createComplianceControls(portal)
+(Pdb)
+(Pdb)
+
+
+(Pdb) c
+2013-08-11 00:38:36 INFO ato.tool.setuphandlers >> START: creating individual Compliance controls
+2013-08-11 00:38:36 ERROR Zope.SiteErrorLog 1376203116.910.885530653266 http://localhost:20161/ato/portal_setup/manage_importSelectedSteps
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module ZPublisher.Publish, line 46, in call_object
+  Module Products.GenericSetup.tool, line 511, in manage_importSelectedSteps
+  Module Products.GenericSetup.tool, line 324, in runImportStepFromProfile
+  Module Products.GenericSetup.tool, line 1015, in _doRunImportStep
+   - __traceback_info__: ato_tool_builder
+  Module ato.tool.setuphandlers, line 198, in importATOContent
+  Module ato.tool.setuphandlers, line 104, in createComplianceControls
+KeyError: 'controlclass'
+
